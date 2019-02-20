@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngLand Landing Page</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+                <h5>Angland Documentation</h5>
+            </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+                <a href="#cli" class="mdl-layout__tab">Getting Started</a>
+                <a href="#code" class="mdl-layout__tab">Theme Customization</a>
+                <a href="#td" class="mdl-layout__tab">3rd Party</a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="mdl-layout__tab-panel is-active" id="overview">
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="column bl">
+                        <h4>
+                            Overview
+                        </h4>
+                        <p>
+                            This documentation is to help you understand the template's structure. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML, CSS and JS knowledge is required to customize this template.
+                        </p>
+                        <p>
+                            If you have any questions that are beyond the scope of this help file, please feel free to get in touch.
+                        </p>
+                        <p>
+                            Support for my items includes:
+                        </p>
+                        <ul class="toc">
+                            <a>
+                  Responding to questions or problems regarding the item and its features
+                </a>
+                            <a>
+                  Fixing bugs and reported issues
+                </a>
+                            <a>
+                  Providing updates to ensure compatibility with new software versions
+                </a>
+                        </ul>
+                        <p>
+                            Item support does not include:
+                        </p>
+                        <ul class="toc">
+                            <a>
+                  Customization and installation services
+                </a>
+                            <a>
+                  Support for third party software and plug-ins
+                </a>
+                        </ul>
+                        <h5 class="mt25">
+                            What is it?
+                        </h5>
+                        <p>
+                            Angland is a creative angular 6 material design landing page. It comes out of the box with AoT and lazy loading support. With this, you get all you need to start working on your SAAS, CRM, CMS or dashboard based project.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="mdl-layout__tab-panel" id="cli">
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>Getting started</h4>
+                        <p>This template is built with angular-cli and requires Node and NPM to be installed.</p>
+                        <h6>Installing the prerequisites</h6>
+                        <p><strong>Node.js and NPM:</strong> You can download Node.js from <a href="https://nodejs.org">https://nodejs.org</a>. NPM comes bundled with Node.js</p>
+                        <p><strong>angular-cli:</strong> You can install angular-cli by executing from your terminal <b>npm install -g @angular/cli</b>. More details can be found here <a href="https://github.com/angular/angular-cli">https://github.com/angular/angular-cli</a> </p>
+                        <h6>Installing the npm packages</h6>
+                        <p>Before proceding you'll need to install npm packages. You can do this by running <strong>npm install</strong> from the root of your project to install all the necessary dependencies.</p>
+                        <h5>Using CLI</h5>
+                        <h6>Development server</h6>
+                        <p>Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.</p>
+                        <h6>Code scaffolding</h6>
+                        <p>Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.</p>
+                        <h6>Building</h6>
+                        <p>Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build. Use `--aot` flag for a AoT build</p>
+                        <h6>Further help</h6>
+                        <p>To get more help on the `angular-cli` use `ng --help` or go check out <a href="https://github.com/angular/angular-cli">https://github.com/angular/angular-cli</a>.</p>
+                        <h5>Layout Engine</h5>
+                        <p>For the layout, the template uses @angular/flex-layout angular 2+ component layout engine which uses flexbox css. For detailed usage information you can read the docs over at <a href="https://github.com/angular/flex-layout">https://github.com/angular/flex-layout</a> </p>
+                    </div>
+                </section>
+            </div>
+            <div class="mdl-layout__tab-panel" id="code">
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>Theme Customization</h4>
+                        <h6>What is a theme?</h6>
+                        <p>
+                            A <strong>theme</strong> is the set of colors that will be applied to the Angular Material components. The library's approach to theming is based on the guidance from the <a href="https://material.google.com/style/color.html#color-color-palette" class="docs-markdown-a">Material Design spec</a>.</p>
+                        <ul>
+                            <li class="docs-markdown-li">A primary palette: colors most widely used across all screens and components.</li>
+                            <li class="docs-markdown-li">An accent palette: colors used for the floating action button and interactive elements.</li>
+                            <li class="docs-markdown-li">A warn palette: colors used to convey error state.</li>
+                            <li class="docs-markdown-li">A foreground palette: colors for text and icons.</li>
+                            <li class="docs-markdown-li">A background palette: colors used for element backgrounds.</li>
+                        </ul>
+                        <h6>Using a pre-built theme</h6>
+                        <p class="docs-markdown-p">Angular Material comes prepackaged with several pre-built theme css files. These theme files also include all of the styles for core (styles common to all components), so you only have to include a single css file for Angular Material in your app.</p>
+                        <p class="docs-markdown-p">You can include a theme file directly into your application from <code class="docs-markdown-code">@angular/material/prebuilt-themes</code></p>
+                        <p class="docs-markdown-p">Available pre-built themes:</p>
+                        <ul class="docs-markdown-ul">
+                            <li class="docs-markdown-li"><code class="docs-markdown-code">deeppurple-amber.css</code></li>
+                            <li class="docs-markdown-li"><code class="docs-markdown-code">indigo-pink.css</code></li>
+                            <li class="docs-markdown-li"><code class="docs-markdown-code">pink-bluegrey.css</code></li>
+                            <li class="docs-markdown-li"><code class="docs-markdown-code">purple-green.css</code></li>
+                        </ul>
+                        <h4>Defining custom theme</h4>
+                        <p>
+                            Please follow the link use customize theme
+                            <a href="https://material.angular.io/guide/theming#defining-a-custom-theme">Custom Theme</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="mdl-layout__tab-panel" id="td">
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>3rd party components</h4>
+
+                        <div>
+
+
+                            <b>Angular material</b>
+                            <p><a href="https://material.angular.io" target="_blank">https://material.angular.io</a></p>
+
+                            <b>Flex layout</b>
+                            <p><a href="https://github.com/angular/flex-layout" target="_blank">https://github.com/angular/flex-layout</a></p>
+
+                            <b>@ngu/carousel</b>
+                            <p><a href="https://github.com/sheikalthaf/ngu-carousel" target="_blank">https://github.com/sheikalthaf/ngu-carousel</a></p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="assets/material.min.js"></script>
+</body>
+
+</html>
